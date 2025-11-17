@@ -1,0 +1,124 @@
+.custom-footer {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: white;
+  padding: 3rem 0 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.custom-footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #667eea, transparent);
+}
+
+.footer-brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.footer-tagline {
+  color: #cbd5e1;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.footer-location {
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.footer-contact {
+  text-align: right;
+}
+
+.contact-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.contact-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border: 1px solid #334155;
+  border-radius: 25px;
+  font-weight: 500;
+}
+
+.contact-link:hover {
+  color: #667eea;
+  border-color: #667eea;
+  transform: translateY(-2px);
+  background: rgba(102, 126, 234, 0.1);
+}
+
+.footer-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #334155, transparent);
+  margin: 2rem 0;
+}
+
+.footer-bottom {
+  padding-top: 1rem;
+}
+
+.footer-copyright {
+  color: #94a3b8;
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.footer-tech {
+  text-align: right;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+.tech-love {
+  color: #ef4444;
+  margin: 0 0.5rem;
+  animation: heartbeat 2s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+@media (max-width: 768px) {
+  .custom-footer {
+    padding: 2rem 0 1rem;
+    text-align: center;
+  }
+  
+  .footer-contact {
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+  
+  .contact-links {
+    justify-content: center;
+  }
+  
+  .footer-tech {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .footer-brand {
+    font-size: 1.3rem;
+  }
+}
